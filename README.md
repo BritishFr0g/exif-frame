@@ -5,8 +5,10 @@ A terminal UI for generating Instagram-style EXIF borders on your photos. Reads 
 ![Python](https://img.shields.io/badge/python-3.8+-blue)
 ![License|78](https://img.shields.io/badge/license-MIT-green)
 
-![screenshot](screenshot.png)
-
+## Example:
+![before](images/before.jpg)
+This is then processed through the app and it gives out, in a folder (/framed) a square bordered image for instagram feeds
+![after](images/after.png)
 ## What it does
 
 You point it at a photo. It reads the EXIF data (camera body, lens, shutter speed, aperture, ISO, date) and builds a clean framed image with that metadata arranged around the photo on a configurable canvas. Think of those Instagram posts where photographers show their settings — but automated and customisable.
@@ -20,6 +22,7 @@ The TUI lets you:
 - Preview formatted values live as you edit
 - Output to a `framed/` subfolder next to the original
 
+![screenshot](images/screenshot.png)
 ## Prerequisites
 ### ExifTool
 
@@ -39,7 +42,7 @@ The TUI lets you:
 ## Install
 
 ```bash
-git clone https://github.com/BritishFr0g/exif-frame.git
+git clone https://github.com/YOURUSERNAME/exif-frame.git
 cd exif-frame
 pip install -r requirements.txt
 ```
